@@ -8,13 +8,17 @@ public class Main {
 
         Options options = new Options();
 
-        Option input = new Option("s", "secretKey", true, "Secret key for access to REST API");
-        input.setRequired(true);
-        options.addOption(input);
+        Option secretKeyOption = new Option("s", "secretKey", true, "Secret key for access to REST API");
+        secretKeyOption.setRequired(true);
+        options.addOption(secretKeyOption);
 
-        Option output = new Option("p", "path", true, "reTURN users.txt file location");
-        output.setRequired(false);
-        options.addOption(output);
+        Option pathOption = new Option("p", "path", true, "reTURN users.txt file location");
+        pathOption.setRequired(false);
+        options.addOption(pathOption);
+
+        Option restApiPortOption = new Option("port", "port", true, "REST API HTTP Server post");
+        restApiPortOption.setRequired(false);
+        options.addOption(restApiPortOption);
 
         CommandLineParser parser = new DefaultParser();
         HelpFormatter formatter = new HelpFormatter();
@@ -25,16 +29,22 @@ public class Main {
 
             String secretKey = cmd.getOptionValue("secretKey");
             String dbPath = cmd.getOptionValue("path");
+            String serverPortString = cmd.getOptionValue("port");
 
             if (dbPath != null){
                 Constants.DEFAULT_CONFIG_ADDRESS = dbPath;
             }
+
+            if (serverPortString != null) {
+                Constants.DEFAULT_REST_API_PORT = Integer.parseInt(serverPortString);
+            }
+
             Constants.SECRET_KEY = secretKey;
 
 
             new TurnManager();
 
-        } catch (ParseException e) {
+        } catch (Exception e) {
             System.out.println(e.getMessage());
             formatter.printHelp("Turn Server Manager", options);
 

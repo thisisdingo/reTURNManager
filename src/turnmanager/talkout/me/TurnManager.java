@@ -17,6 +17,8 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.util.List;
 
+import static turnmanager.talkout.me.Constants.DEFAULT_REST_API_PORT;
+
 public class TurnManager implements HTTPServerInterface {
 
     private ReTurnHandler handler;
@@ -28,7 +30,7 @@ public class TurnManager implements HTTPServerInterface {
 
             HttpServer server = HttpServer.create();
 
-            server.bind(new InetSocketAddress(8765), 0);
+            server.bind(new InetSocketAddress(DEFAULT_REST_API_PORT), 0);
 
             server.createContext("/", new HTTPServer(this));
             server.setExecutor(null);
