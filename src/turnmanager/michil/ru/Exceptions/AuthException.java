@@ -1,4 +1,4 @@
-package turnmanager.talkout.me.Exceptions;
+package turnmanager.michil.ru.Exceptions;
 
 public class AuthException extends Exception {
 

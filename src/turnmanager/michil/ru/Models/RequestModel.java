@@ -1,4 +1,4 @@
-package turnmanager.talkout.me.Models;
+package turnmanager.michil.ru.Models;
 
 import java.util.ArrayList;
 

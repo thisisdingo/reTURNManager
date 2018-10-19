@@ -1,6 +1,6 @@
-package turnmanager.talkout.me.ReTURN;
+package turnmanager.michil.ru.ReTURN;
 
-import turnmanager.talkout.me.Models.TURNUser;
+import turnmanager.michil.ru.Models.TURNUser;
 
 import java.util.ArrayList;
 import java.util.List;

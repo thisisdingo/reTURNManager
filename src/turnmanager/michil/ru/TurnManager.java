@@ -1,23 +1,22 @@
-package turnmanager.talkout.me;
+package turnmanager.michil.ru;
 
 import com.google.gson.Gson;
-import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 import com.sun.net.httpserver.HttpServer;
-import turnmanager.talkout.me.HTTPServer.HTTPServer;
-import turnmanager.talkout.me.HTTPServer.HTTPServerInterface;
-import turnmanager.talkout.me.Models.RequestModel;
-import turnmanager.talkout.me.Models.ResponseModel;
-import turnmanager.talkout.me.Models.TURNUser;
-import turnmanager.talkout.me.ReTURN.ReTurnHandler;
+import turnmanager.michil.ru.Models.RequestModel;
+import turnmanager.michil.ru.Models.ResponseModel;
+import turnmanager.michil.ru.Models.TURNUser;
+import turnmanager.michil.ru.HTTPServer.HTTPServer;
+import turnmanager.michil.ru.HTTPServer.HTTPServerInterface;
+import turnmanager.michil.ru.ReTURN.ReTurnHandler;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.util.List;
 
-import static turnmanager.talkout.me.Constants.DEFAULT_REST_API_PORT;
+import static turnmanager.michil.ru.Constants.DEFAULT_REST_API_PORT;
 
 public class TurnManager implements HTTPServerInterface {
 

@@ -1,4 +1,4 @@
-package turnmanager.talkout.me;
+package turnmanager.michil.ru;
 
 public class Constants {
     static String DEFAULT_CONFIG_ADDRESS = "/etc/reTurn/users.txt";

@@ -1,4 +1,4 @@
-package turnmanager.talkout.me.Models;
+package turnmanager.michil.ru.Models;
 
 public class TURNUser {
 
@@ -6,14 +6,14 @@ public class TURNUser {
     private String password;
 
     private String realm;
+
     /* MODE:
 
-        #   authorized   (user authorized)
-        #   refused      (user denied access)
-        #   restricted   (for when bandwidth limiting is implemented)
+    #   authorized   (user authorized)
+    #   refused      (user denied access)
+    #   restricted   (for when bandwidth limiting is implemented)
 
-     */
-
+    */
 
     private String mode;
 

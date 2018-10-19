@@ -1,16 +1,16 @@
-package turnmanager.talkout.me.HTTPServer;
+package turnmanager.michil.ru.HTTPServer;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.sun.net.httpserver.*;
-import turnmanager.talkout.me.Exceptions.AuthException;
-import turnmanager.talkout.me.Models.RequestModel;
-import turnmanager.talkout.me.Models.ResponseModel;
+import turnmanager.michil.ru.Exceptions.AuthException;
+import turnmanager.michil.ru.Models.RequestModel;
+import turnmanager.michil.ru.Models.ResponseModel;
 
 import java.io.*;
 import java.util.stream.Collectors;
 
-import static turnmanager.talkout.me.Constants.SECRET_KEY;
+import static turnmanager.michil.ru.Constants.SECRET_KEY;
 
 public class HTTPServer implements HttpHandler {
 

@@ -1,4 +1,4 @@
-package turnmanager.talkout.me;
+package turnmanager.michil.ru;
 
 class Commands {
 
